@@ -1,0 +1,307 @@
+ 
+/* cardcontainer */
+
+.cardcontainer{
+    width: 95%;
+    margin: 2px 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    padding: 0px 25px 20px;
+    border-bottom: 1px solid rgb(198, 197, 197);
+}
+
+
+.card{
+    height: 18vh;
+    background-color: #c0bcbc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.card h2{
+    justify-self: center;
+}
+
+.card:nth-child(1){
+    background-color: rgb(129, 175, 61);
+    color: white;
+}
+
+.card:nth-child(1):hover{
+    background-color: rgb(92, 126, 41);
+}
+
+
+.card:nth-child(2){
+    background-color: coral;
+    color: white;
+}
+.card:nth-child(2):hover{
+    background-color: rgb(195, 100, 65);
+}
+
+.card:nth-child(3){
+    background-color: rgb(190, 81, 190);
+    color: rgb(235, 235, 188);
+}
+.card:nth-child(3):hover{
+    background-color: rgb(121, 58, 121);
+}
+.card:nth-child(4){
+    background-color: rgb(89, 171, 209);
+    color: rgb(235, 235, 188);
+}
+.card:nth-child(4):hover{
+    background-color: rgb(64, 117, 142);
+}
+
+
+
+.graphcontainer{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 20px;
+    height: 100%;
+}
+
+.graph{
+    grid-column: 1/5;
+    grid-row: 1/4;
+    border-radius: 2px;
+    text-align: center;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+.table-container {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0px auto;
+    min-height: 70vh;
+    max-height: 70vh;
+    overflow: scroll;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 20px rgb(198, 198, 198);
+}
+
+.downgraph>.table-container{
+    min-height: 55vh;
+    max-height: 55vh;
+}
+.graph>.table-container{
+    overflow: hidden;
+}
+
+.table-container>div{
+    padding: 4px 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    outline: none;
+}
+
+
+.table-container>div>section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.res{
+        padding: 8px 40px;
+        background-color: #0a7613;
+        color: #f9f9f9;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn{
+        padding: 8px 40px;
+        background-color: #007bff;
+        color: #f9f9f9;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        
+}
+
+.table-container>div a{
+    margin-bottom: 18px;
+
+}
+
+.table-container>div input{
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #939393;
+    width: 25vw;
+}
+.table-container>div>button{
+        padding: 8px 40px;
+        background-color: #ff4000;
+        color: #f9f9f9;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.table-container thead {
+    background-color: #3f0808;
+    color: #f9f9f9;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #ddd; 
+}
+
+.table-container th, td {
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.table-container th{
+    
+    padding: 14px;
+    font-size: 16px;
+}
+
+
+.table-container td{
+    font-size: 13px;
+}
+
+.table-container td a:nth-child(1) button{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+.table-container td a:nth-child(2) button{
+    background-color: rgb(80, 129, 7);
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.table-container td a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.table-container tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+
+
+
+
+.sidecard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.sidecard p{
+    font-size: 16px;
+
+}
+
+.sidecard:nth-child(2){
+    background-color: rgb(107, 152, 17);
+}
+.sidecard:nth-child(2):hover{
+    background-color: rgb(83, 114, 19);
+}
+
+
+.sidecard:nth-child(3){
+    background-color: crimson;
+}
+.sidecard:nth-child(3):hover{
+    background-color: rgb(154, 23, 49);
+}
+
+
+.sidecard:nth-child(4){
+    background-color: blueviolet;
+}
+.sidecard:nth-child(4):hover{
+    background-color: rgb(99, 34, 159);
+}
+
+
+.sidecard:nth-child(5){
+    background-color: rgb(193, 15, 92);
+}
+.sidecard:nth-child(5):hover{
+    background-color: rgb(139, 13, 68);
+}
+
+
+.sidecard:nth-child(6){
+    background-color: rgb(175, 183, 37);
+}
+.sidecard:nth-child(6):hover{
+    background-color: rgb(124, 129, 25);
+}
+ 
+
+
+.sidecard:nth-child(7){
+    background-color: chocolate;
+}
+.sidecard:nth-child(7):hover{
+    background-color: rgb(142, 72, 21);
+}
+
+
+.downgraph{
+    grid-row: 4/7;
+    grid-column: 1/7;
+    border-radius: 8px;
+}
+
+
+
+
+  

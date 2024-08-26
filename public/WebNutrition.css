@@ -1,0 +1,118 @@
+.banner{
+    /* border: 2px solid red; */
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 6px 0px;
+    background: url(https://d2csxpduxe849s.cloudfront.net/media/E32629C6-9347-4F84-81FEAEF7BFA342B3/EB0A75ED-DA9A-4E9E-BB44C4C760E69730/D00A5BAA-D4AF-4D82-B07094E8F5B6E1EB/WebsiteJpg_XL-FNUT_Main%20Visual_Green_Website.jpg) no-repeat center center /cover;
+    color: white;
+ }
+
+.banner::before{
+    content: "";
+    height: 40%;
+    width: 100%;
+    background: black;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+
+
+
+
+ .banner h2{
+     font-size: 40px ;
+     font-family: "Sedan SC", serif;
+     z-index: 3;
+    }
+.banner p{
+    /* font-size: 18px; */
+    font-weight: 550;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 3;
+}
+
+
+@media only screen and (max-width: 900px){
+    .banner{
+        height: 30vh;
+    }
+
+
+    .banner::before{
+        height: 30%;
+    }
+
+
+    .banner h2{
+        font-size: 25px ;
+        text-align: center;
+       }
+
+       .banner p{
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+.container {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* color: #333; */
+}
+
+.container header {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.container h1 {
+    margin: 0;
+    font-weight: 500;
+    
+}
+
+.container section {
+    padding: 2em;
+    margin: 1em 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    color: #2c2c2c;
+    border-bottom: 2px solid #1c1c1c;
+    padding-bottom: 0.5em;
+    margin-bottom: 20px;
+}
+
+ .container ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+}
+
+.diet, .recipe {
+    margin: 1em 0;
+}
+
+.container h3 {
+    color: #d53500;
+    margin-top: 0;
+    font-weight: 550;
+}
+
+@media (max-width: 768px) {
+    .container section {
+        padding: 1em;
+    }
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: url(welcome.jpeg) no-repeat center left /cover;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(11, 11, 163);
+    color: white;
+    padding: 12px 20px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 64%;
+    left: 10%;
+}
+
+a:hover{
+    background-color: rgb(13, 13, 112);
+}

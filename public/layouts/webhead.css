@@ -1,0 +1,161 @@
+/* navbar */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#Nav {
+    background-color: #1c1c1c;
+    backdrop-filter: blur(1px);
+    padding: 4px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    color: white;
+    /* border-bottom: 1px solid rgb(44, 43, 43); */
+}
+
+
+.logocontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 16px;
+    /* border: 2px solid yellow; */
+}
+
+#Nav ul li {
+    cursor: pointer;
+    font-size: clamp(6px, 1.2vw, 12px);
+    font-weight: 500;
+    padding: 8px 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.hambutton{
+    display: none
+}
+
+
+
+@media only screen and (max-width: 750px) {
+   
+    .logocontainer{
+        margin-left: 25px;
+    }
+    
+    
+    #Nav ul{
+        flex-direction: column;
+        position: relative;
+        background-color: #1c1c1c;
+        width: 100%;
+    }
+    
+    .menu{
+        /* right: -70vw;  */
+        visibility: hidden;
+
+    }
+    .fullheight{
+        background-color: #1c1c1c;
+    }
+
+    .crossbtn span:nth-child(1){
+        transform: rotate(120deg);
+
+    }
+
+    .crossbtn span:nth-child(2){
+        visibility: hidden;
+    }
+
+    .crossbtn span:nth-child(3){
+        transform: rotate(60deg);
+    }
+
+    #Nav{
+        height: 6vh;
+        overflow: visible;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 4px 0px;
+        /* width: 100vw; */
+    }
+    
+    .hambutton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        /* margin-left: 250px; */
+        padding: 0px 20px;
+        width: 60px;
+        align-self: flex-end;
+        
+    }
+    
+    
+    
+    
+    .hambutton span{
+        display: inline-block;
+        width: 40px;
+        background-color: white;
+        border-radius: 8px;
+        position: relative;
+        z-index: 5;
+        height: 4px;
+        
+    }
+    
+    .hamcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 0px;
+        width: 40%;
+        /* border: 2px solid greenyellow; */
+        /* background-color: #1c1c1c; */
+
+    }
+        
+
+
+}
+
+
+#Nav ul li:hover {
+    color: rgb(255, 251, 0);
+    transform: translateY(-10px);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a div {
+    color: white;
+}

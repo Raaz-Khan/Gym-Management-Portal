@@ -1,0 +1,128 @@
+
+
+.table-container {
+    border-radius: 8px;
+    width: 90%;
+    max-width: 1250px;
+    margin: 0px auto;
+    min-height: 120vh;
+    max-height: 150vh;
+    overflow: scroll;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 20px rgb(198, 198, 198);
+    /* border: 2px solid yellow; */
+}
+
+.table-container>div{
+    padding: 4px 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    outline: none;
+}
+
+
+.table-container>div>section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.res{
+        padding: 8px 40px;
+        background-color: #0a7613;
+        color: #f9f9f9;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn{
+        padding: 8px 40px;
+        background-color: #007bff;
+        color: #f9f9f9;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        
+}
+
+.table-container>div a{
+    /* border: 2px solid blue; */
+    margin-bottom: 18px;
+
+}
+
+.table-container>div input{
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #939393;
+    width: 25vw;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+thead {
+    background-color: #007bff;
+    color: #f9f9f9;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #ddd; 
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    
+}
+
+th{
+    
+    padding: 14px;
+    font-size: 15px;
+}
+
+
+td{
+    font-size: 12px;
+}
+
+td a:nth-child(1) button{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+td a:nth-child(2) button{
+    background-color: rgb(80, 129, 7);
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+td a{
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid firebrick; */
+    text-decoration: none;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

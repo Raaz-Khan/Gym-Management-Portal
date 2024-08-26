@@ -1,0 +1,42 @@
+nav{
+    border-bottom: 1px solid #dddcdc;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px 0px 16px;
+    box-sizing: border-box;
+    height: 10vh;
+  }
+  
+  .logocontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9vh;
+    overflow: hidden;
+  }
+  
+  .logocontainer>img{
+    width: 70px;
+
+}
+
+.logocontainer>p{
+  font-family: poppins, sans-serif;
+  font-size: 20px;
+}
+
+
+  nav a{
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+  }
+
+
+  nav a:hover{
+    background-color: rgb(159, 16, 16);
+  }
